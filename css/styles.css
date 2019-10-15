@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+html,body{
+	min-height: 100vh;
+	margin: 0;
+   background-color: antiquewhite;
+}
+
+
+.sun .cls-1{
+    fill:yellow;
+}
+
+.clouds .cls-1{
+    fill:blue;
+}
+
+
+.ghosts .cls-1{
+    visibility:hidden;
+}
+
+
+.house .base .cls-2{
+    fill: brown; 
+}
+
+
+.pumpkins ellipse{
+    fill: #ff7518;
+}
+
+.pumpkin1 .mouth1{
+    fill:#ffc55a;
+}
+
+.pumpkin2 .mouth2{
+    fill:#ffc55a;
+}
+
+
+
+.pumpkins:hover + .ghosts .cls-1{     
+     visibility: visible;
+    transition: 7s;
+    transform: translateY(+70px);
+    transform-origin:center;
+    transform: rotate(5deg);
+}
+
+.pumpkins:hover ~ .clouds .cls-1{     
+    fill:black;
+}
+
+.pumpkins:hover ~ .sun .cls-1{     
+    fill:red;
+}
+
+.pumpkins:hover ~ .sun line{     
+    visibility: hidden;
+}
+
+.pumpkins:hover ~ .person .smile{ 
+ visibility: hidden;
+}
+
+.pumpkins:hover ~ .person{ 
+    transition: 1s;
+     transform: translateX(-500px);
+}
+
+.pumpkins:hover + .ghosts .cls-1{     
+     visibility: visible;
+    transition: 7s;
+    transform: translateY(+70px);
+    transform-origin:center;
+    transform: rotate(5deg);
+}
+
+
+.cls-1 {
+        fill: none;
+      }
+
+.cls-1, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+.cls-2, .cls-3 {
+        fill: #fff;
+      }
+
